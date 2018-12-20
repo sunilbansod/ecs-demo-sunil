@@ -4,8 +4,8 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-	    - eval `aws ecr get-login --no-include-email --region us-east-1`
-	    - REPOSITORY_URI=165306929646.dkr.ecr.us-east-1.amazonaws.com/firstbuild
+      - eval `aws ecr get-login --no-include-email --region us-east-1`
+      - REPOSITORY_URI=165306929646.dkr.ecr.us-east-1.amazonaws.com/firstbuild
       
   build:
     commands:
