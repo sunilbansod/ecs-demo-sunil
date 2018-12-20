@@ -8,5 +8,5 @@ phases:
   post_build:
     commands:
       - eval `aws ecr get-login --region us-east-1`
-      - docker tag firstbuild:latest <your account number>.dkr.ecr.us-east-1.amazonaws.com/firstbuild:latest
-      - docker push <your account number>.dkr.ecr.us-east-1.amazonaws.com/firstbuild:latest
+      - docker tag firstbuild:latest 165306929646.dkr.ecr.us-east-1.amazonaws.com/firstbuild:latest
+      - docker push 165306929646.dkr.ecr.us-east-1.amazonaws.com/firstbuild:latest
