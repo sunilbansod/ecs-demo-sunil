@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER  Sunil Bansod
+MAINTAINER  Sunil 
 RUN apt-get update
 RUN apt-get -y install apache2
 RUN echo “Hello Apache server on Ubuntu Docker” > /var/www/html/index.html
