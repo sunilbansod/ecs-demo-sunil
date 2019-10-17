@@ -1,0 +1,14 @@
+{
+    "cluster": "sunil001-cluster",
+    "serviceName": "sunil001-service",
+    "taskDefinition": "sunil001-task",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:eu-west-2:634223907656:targetgroup/circleci-demo-target-group/a5a0f047c845fcbb",
+            "containerName": "sunilcontainer001",
+            "containerPort": 80
+        }
+    ],
+    "desiredCount": 1,
+    "role": "ecsServiceRole"
+}
