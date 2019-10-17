@@ -1,84 +1,15 @@
 {
-  "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::165306929646:role/ecsTaskExecutionRole",
-  "containerDefinitions": [
-    {
-      "dnsSearchDomains": null,
-      "logConfiguration": null,
-      "entryPoint": null,
-      "portMappings": [
-        {
-          "hostPort": 0,
-          "protocol": "tcp",
-          "containerPort": 80
-        }
-      ],
-      "command": null,
-      "linuxParameters": null,
-      "cpu": 0,
-      "environment": [],
-      "resourceRequirements": null,
-      "ulimits": null,
-      "dnsServers": null,
-      "mountPoints": [],
-      "workingDirectory": null,
-      "secrets": null,
-      "dockerSecurityOptions": null,
-      "memory": 300,
-      "memoryReservation": null,
-      "volumesFrom": [],
-      "stopTimeout": null,
-      "image": "165306929646.dkr.ecr.us-east-1.amazonaws.com/test001:latest",
-      "startTimeout": null,
-      "firelensConfiguration": null,
-      "dependsOn": null,
-      "disableNetworking": null,
-      "interactive": null,
-      "healthCheck": null,
-      "essential": true,
-      "links": null,
-      "hostname": null,
-      "extraHosts": null,
-      "pseudoTerminal": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "systemControls": null,
-      "privileged": null,
-      "name": "sunilcontainer001"
-    }
-  ],
-  "placementConstraints": [],
-  "memory": "400",
-  "taskRoleArn": null,
-  "compatibilities": [
-    "EC2"
-  ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:165306929646:task-definition/sunil001:2",
-  "family": "sunil001",
-  "requiresAttributes": [
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.ecr-auth"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "ecs.capability.execution-role-ecr-pull"
-    }
-  ],
-  "pidMode": null,
-  "requiresCompatibilities": [
-    "EC2"
-  ],
-  "networkMode": "bridge",
-  "cpu": "1024",
-  "revision": 1,
-  "status": "ACTIVE",
-  "inferenceAccelerators": null,
-  "proxyConfiguration": null,
-  "volumes": []
+	"family": "sunil001",
+	"containerDefinitions": [{
+		"memory": 300,
+		"image": "165306929646.dkr.ecr.us-east-1.amazonaws.com/test001:latest",
+		"name": "sunilcontainer001",
+		"portMappings": [{
+			"hostPort": 0,
+			"protocol": "tcp",
+			"containerPort": 80
+		}]
+
+	}],
+	"networkMode": "bridge"
 }
