@@ -4,7 +4,7 @@
     "taskDefinition": "sunil001-task",
     "loadBalancers": [
         {
-            "targetGroupArn": "arn:aws:elasticloadbalancing:eu-west-2:634223907656:targetgroup/circleci-demo-target-group/a5a0f047c845fcbb",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:165306929646:targetgroup/ecs-tg/f41bc7e263b5d6bd",
             "containerName": "sunilcontainer001",
             "containerPort": 80
         }
