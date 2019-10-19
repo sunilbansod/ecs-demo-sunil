@@ -1,6 +1,6 @@
 {
     "cluster": "sunil001-cluster",
-    "serviceName": "sunil001-service",
+    "serviceName": "sunil002-service",
     "taskDefinition": "sunil001-task",
     "loadBalancers": [
         {
