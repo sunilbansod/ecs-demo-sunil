@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "sunil-blue-task"
+        TaskDefinition: "sample-website"
         LoadBalancerInfo:
           ContainerName: "sunilcontainer001"
           ContainerPort: 80
