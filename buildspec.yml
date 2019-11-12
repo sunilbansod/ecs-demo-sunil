@@ -24,6 +24,4 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"sunilcontainer001","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
-    files: 
-      - imagedefinitions.json
-      - appspec.yaml  
+    files: imagedefinitions.json
