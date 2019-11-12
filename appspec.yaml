@@ -1,9 +1,11 @@
-version: 0.0
-Resources:
-  - TargetService:
-      Type: AWS::ECS::Service
-      Properties:
-        TaskDefinition: "sample-website"
-        LoadBalancerInfo:
-          ContainerName: "sunilcontainer001"
+--- 
+Resources: 
+  - 
+    TargetService: 
+      Properties: 
+        LoadBalancerInfo: 
+          ContainerName: sunilcontainer001
           ContainerPort: 80
+        TaskDefinition: sample-website
+      Type: "AWS::ECS::Service"
+version: 0.0
