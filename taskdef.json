@@ -54,7 +54,7 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:165306929646:task-definition/sample-website:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:165306929646:task-definition/sunil-ecs-demo-task:1",
   "family": "sample-website",
   "requiresAttributes": [
     {
