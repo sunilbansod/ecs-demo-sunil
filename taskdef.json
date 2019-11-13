@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": null,
+  "executionRoleArn": "arn:aws:iam::165306929646:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -54,14 +54,20 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:165306929646:task-definition/sunil-blue-task:7",
-  "family": "sunil-blue-task",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:165306929646:task-definition/sample-website:1",
+  "family": "sample-website",
   "requiresAttributes": [
     {
       "targetId": null,
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "ecs.capability.execution-role-ecr-pull"
     }
   ],
   "pidMode": null,
@@ -70,7 +76,7 @@
   ],
   "networkMode": "bridge",
   "cpu": "500",
-  "revision": 7,
+  "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
